@@ -1,0 +1,122 @@
+.center_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: auto;
+}
+
+.recipes_img {
+    border-radius: 10px;
+    height: 300px;
+    object-fit:cover
+}
+
+.presentation {
+    font-family: 'Carter One', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.index_list {
+    border-left: 5px solid black;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: 10px 20px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index_list li {
+    margin: 5px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    color: black;
+  }
+
+li a {
+    color: black;
+}
+
+.recipes_title {
+    font-family: 'Carter One', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.intro {
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+h3,
+h4 {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: Helvetica, sans-serif;
+}
+
+h4 {
+    font-size: 1rem;
+    margin-bottom: -10px;
+}
+
+.ingredients,
+.directions {
+    font-family: Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    list-style-type: none;
+    width: 500px;
+}
+
+.ingredients li::before {
+    content: "□";
+    margin-right: 10px;
+    margin-left: -20px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 1px;
+}
+
+.directions li {
+    counter-increment: step-counter;
+    margin-bottom: 20px;
+}
+
+.directions li::before {
+    content: counter(step-counter);
+    margin-right: 10px;
+    margin-left: -20px;
+    background-color: black;
+    font-size: 80%;
+    color: white;
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 50%;
+}
+
+.back_button {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    padding: 14px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    margin-top: 50px;
+}
